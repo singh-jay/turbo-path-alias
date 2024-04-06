@@ -2,10 +2,14 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "imports": {
+    "#*": "./src/*"
+  },
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./input": "./src/input.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

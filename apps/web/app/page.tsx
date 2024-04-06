@@ -3,6 +3,7 @@ import { Card } from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
+import { Input } from "@repo/ui/input";
 
 function Gradient({
   conic,
@@ -54,6 +55,7 @@ const LINKS = [
 export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
+      <Input name="username" label="Your Name" />
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
